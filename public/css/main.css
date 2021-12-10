@@ -1,0 +1,754 @@
+:root {
+    --header-height: 65px;
+    --primary-color: #FCB800;
+}
+
+body {
+    font-size: 14px;
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+#close-menu {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+form .form-label.required::after,
+form .col-form-label.required::after {
+    position: absolute;
+    content: "*";
+    color: red;
+    padding-left: 4px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.form-action {
+    text-align: center;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}
+
+.pd-0 {
+    padding: 0 !important;
+}
+
+.mg-0 {
+    margin: 0 !important;
+}
+
+.mg-20 {
+    margin: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mg--10 {
+    margin: 0 -10px !important;
+}
+
+.pd-4 {
+    padding: 0 4px;
+}
+
+.pd-20 {
+    padding-right: 20px !important;
+}
+
+.w-15 {
+    width: 15% !important;
+}
+
+.w-30 {
+    width: 30% !important;
+}
+
+.w-40 {
+    width: 40% !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.search-btn {
+    padding: 6px 28px;
+}
+
+fieldset {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.active {
+    color: #E98F36 !important;
+}
+
+.btn-add {
+    width: 20%;
+}
+
+.btn.btn-primary {
+    background-color: var(--primary-color);
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 9px 18px;
+}
+
+.btn.btn-primary:hover {
+    background-color: #E3A500;
+    transition: all 0.3s ease;
+}
+
+.btn.btn-fix {
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 9px 18px;
+}
+
+.display-4 {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.dropdown-wrapper .dropdown-toggle {
+    width: 44px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.dropdown-wrapper .dropdown-toggle:hover {
+    background-color: #d9dddf;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-menu {
+    padding: 0;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+}
+
+.container-fluid {
+    padding: 0 20px;
+}
+
+.row {
+    margin: 0 -20px;
+}
+
+
+/* Header */
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height);
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    z-index: 999;
+}
+
+.header-brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-brand h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.header-brand__img {
+    width: 100px;
+    height: 65px;
+}
+
+.header-brand__img img {
+    width: 100%;
+}
+
+.header-account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-account__name p {
+    line-height: 40px;
+    margin: 0;
+    padding-left: 8px;
+}
+
+.header-account__avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.header-account__avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.page-main {
+    padding-top: var(--header-height);
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    background-color: #fbfbfb;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: var(--header-height);
+    left: 0;
+    bottom: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow-y: auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 260px;
+}
+
+.copyright {
+    padding-bottom: 15px;
+}
+
+.copyright p {
+    margin: 0;
+    text-align: center;
+    font-size: 13px;
+}
+
+.copyright i {
+    color: #ed5050;
+}
+
+.sidebar-list {
+    padding: 15px 0 15px 15px;
+}
+
+.sidebar-item i {
+    width: 20px;
+}
+
+.sidebar-link,
+.sidebar-child__link {
+    color: #333;
+    font-size: 15px;
+    display: block;
+    padding: 4px 0;
+}
+
+.sidebar-link:hover,
+.sidebar-child__link:hover {
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.sidebar-child {
+    padding-left: 25px;
+}
+
+.sidebar-child__link i {
+    width: 10px;
+    font-size: 10px;
+    position: relative;
+    top: -2px;
+}
+
+.content {
+    position: relative;
+    padding: 20px;
+    padding-left: 25px;
+    margin-left: 253px;
+}
+
+.content-wrapper {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.content .heading {
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 20px;
+}
+
+.main-content select {
+    width: 40%;
+}
+
+.form-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Login */
+
+.login-page {
+    width: 450px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 80px auto;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.login-heading {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.login-heading-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-heading-logo img {
+    width: 150px;
+}
+
+.login-heading-title {
+    text-align: center;
+    padding: 10px 0 20px;
+}
+
+.login-page button {
+    width: 50%;
+}
+
+
+/* Account */
+
+.account-update .row {
+    margin: 0;
+}
+
+.account-update label {
+    text-align: right;
+}
+
+
+/* Thesis list */
+
+.status.waiting {
+    color: #fbfbfb;
+    display: block;
+    background-color: #E98F36;
+    text-align: center;
+    padding: 0.8px 0;
+}
+
+.status.approved {
+    color: #fbfbfb;
+    display: block;
+    background-color: #4ab84a;
+    text-align: center;
+    padding: 0.8px 0;
+}
+
+.status.rejected {
+    color: #fbfbfb;
+    display: block;
+    background-color: #595e59;
+    text-align: center;
+    padding: 0.8px 0;
+}
+
+
+/* Group */
+
+.group-heading {
+    position: relative;
+}
+
+.group-name {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.group-name i {
+    color: #fff;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.group-name h4 {
+    color: #fff;
+    padding-left: 20px;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.group-content {
+    margin: 20px 0;
+}
+
+.assingment {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dadce0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.assingment:hover {
+    background-color: #f1f3f4;
+}
+
+.assingment-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 14.7px 17.9px;
+    margin-right: 15px;
+}
+
+.assingment-icon i {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.assingment-detail span {
+    font-size: 1.4rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+}
+
+.assingment-link,
+.assingment-link:hover {
+    color: #333;
+}
+
+
+/* View assigment */
+
+.view-assign.assingment {
+    border: none;
+    pointer-events: none;
+}
+
+.view-assign .assingment-detail-heading {
+    font-size: 1.8rem;
+}
+
+.view-assign-heading {
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 20px;
+}
+
+.view-assign .assingment-icon {
+    position: relative;
+    top: 4px;
+}
+
+.view-assign-content {
+    margin: 0;
+}
+
+.view-assign-infor-wrapper {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.assingment-deadline {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.assingment-action {
+    border: 1px solid #e6e6e6;
+    padding: 20px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.assingment-action-title {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+}
+
+.view-assign-cmt-action {
+    margin: 20px 0;
+}
+
+.view-assign-cmt-action button {
+    width: 10%;
+}
+
+.assignment-mark {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    background-color: #969696;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 8px 6px;
+}
+
+.mark-assignment #score{
+    width: 40%;
+    margin-bottom: 15px;
+}
+
+.comment-wrapper {
+    border: 1px solid #e6e6e6;
+    border-radius: 0.25rem;
+    padding: 10px;
+    background-color: #fafafa;
+    margin-bottom: 15px;
+}
+
+.cmt-avatar {
+    width: 40px;
+    height: 40px;
+}
+
+.cmt-user-name {
+    padding: 0 8px;
+}
+
+.cmt-content {
+    padding-top: 8px;
+}
+
+.comment-add {
+    padding-top: 10px;
+}
+
+
+/* Quản lý đề tài */
+
+.table-btn,
+.thesis-action-btn {
+    line-height: 1.2rem;
+    padding: 0 4px !important;
+    font-size: 0.9rem;
+}
+
+.mark-assignment label {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+/* -------------------------------- */
+
+
+/* Admin Page */
+
+.admin-sidebar {
+    background-color: #343A40;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.admin-sidebar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #4b545c;
+}
+
+.admin-sidebar-header h3 {
+    color: #00C8EC;
+    margin: 0;
+    padding-left: 8px;
+}
+
+.admin-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.admin-sidebar-list {
+    padding: 15px 0;
+    flex: 1;
+}
+
+.admin-sidebar-link {
+    color: rgba(255, 255, 255, .8);
+    padding: 8px 15px;
+    display: block;
+}
+
+.admin-sidebar-link i {
+    width: 20px;
+    text-align: center;
+}
+
+.admin-sidebar-link:hover,
+.admin-sidebar-child__link:hover {
+    background-color: #494E53;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.admin-sidebar-child__link {
+    padding: 6px 6px 6px 40px;
+    color: rgba(255, 255, 255, .8);
+    display: block;
+}
+
+.admin-sidebar-child__link i {
+    font-size: 0.6rem;
+    position: relative;
+    top: -2px;
+}
+
+.admin-sidebar .copyright {
+    color: rgba(255, 255, 255, .8);
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+}
+
+.admin-header {
+    margin-left: 250px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15.5px 15px;
+    border-bottom: 1px solid #dee2e6;
+    background-color: #fff;
+}
+
+.admin-header-brand {
+    display: flex;
+    align-items: center;
+}
+
+.admin-sidebar-link.active {
+    color: #00C8EC !important;
+}
+
+.admin-content {
+    margin-left: -6px;
+}
+
+.admin-main .heading {
+    padding: 20px 15px;
+    margin: 15px;
+    background-color: #fefefe;
+}
+
+.admin-main .heading h1 {
+    margin: 0;
+}
+
+.admin-main-content {
+    padding: 15px;
+    background-color: #fefefe;
+    margin: 0 15px;
+}
+
+.admin-main .student-list {
+    padding: 15px 0;
+}
+
+
+/* Custom scrollbar in sidebar */
+
+
+/* width */
+
+.scrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+.scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}

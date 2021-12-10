@@ -1,0 +1,197 @@
+/* Mobile */
+@media (max-width: 575.98px){
+    .group-name h4 {
+        font-size: 1.2rem;
+    }
+
+    .content-wrapper {
+        padding: 10px
+    }
+
+    .btn-submit,
+    .btn-add {
+        width: 100%;
+    }
+
+    .cmt-user-name {
+        font-size: 0.8rem;
+    }
+    
+}
+
+/* Tablet */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+    .group-name h4 {
+        font-size: 1.8rem;
+    }
+
+    .btn-add {
+        width: 50%;
+    }
+}
+
+/* Tablet and Mobile */
+@media (max-width: 767.98px) {
+    #close-menu {
+        display: block;
+        position: absolute;
+        text-align: right;
+        margin: 0 20px;
+        font-size: 1.6rem;
+        color: #333;
+        cursor: pointer;
+    }
+
+    .admin-sidebar #close-menu {
+        color: #fff;
+    }
+
+    .admin-sidebar #close-menu:hover {
+        color: #00C8EC ;
+    }
+
+    #close-menu:hover {
+        color: var(--primary-color);
+        transition: all 0.8s ease;
+    }
+
+    .login-page {
+        width: 90%;
+    }
+
+    table button {
+        margin-bottom: 0.3rem;
+    }
+    .header {
+        background: #efae00;
+        border-radius: 0;
+    } 
+
+    .admin-header {
+        position: relative;
+        margin-left: 0;
+    }
+
+    .admin-header-brand,
+    .header-brand {
+        display: none;
+    }
+    
+
+    .header-account__name p {
+        font-weight: 500;
+    }
+
+    .header-account-icon {
+        display: block !important;
+        margin: 0 6px;
+        position: relative;
+        top: -2px;
+    }
+
+    #header-menu-icon {
+        display: block !important;
+        font-size: 1.6rem;
+        cursor: pointer;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin: 0;
+        height: fit-content;
+        border-radius: 0;
+        display: none;
+        background: #eaeaea;
+        z-index: 1;
+    }
+
+    .admin-sidebar {
+        width: 100%;
+        margin-top: 72px;
+        height: fit-content;
+        z-index: 1;
+        display: none;
+    }
+
+    .admin-sidebar-header {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 10px
+    }
+
+    .account-update label {
+        text-align: left;
+    }
+
+    .form-wrapper {
+        width: 100%;
+    }
+
+    form .row {
+        margin: 0;
+    }
+
+    form .row>* {
+        padding: 0;
+    }
+
+    .main-content select {
+        width: 100%;
+    }
+
+    .view-assign-wrapper {
+        margin-bottom: 160px;
+    }
+
+    .assingment-action {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: #ededed;
+        border-radius: 0;
+    }
+
+    .assingment-action-title {
+        display: none;
+    }
+
+    .group-action {
+        flex-direction: column;
+    }
+
+    .group-action button {
+        margin: 10px
+    }
+
+    fieldset {
+        width: 100%;
+    }
+
+    .row.assign-row {
+        flex-direction: column-reverse;
+    }
+
+    .mark-assignment #score {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991.98px) and (min-width: 768px) {
+    .form-wrapper {
+        width: 100%;
+    }
+
+    .group-name h4 {
+        font-size: 2rem;
+    }
+
+    .btn-add {
+        width: 50%;
+    }
+    
+}
